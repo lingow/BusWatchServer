@@ -4,12 +4,12 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 /**
- * @author chamerling
+ * @author Lingow
  * 
  */
 @WebService
-public interface HelloService {
+public interface BuswatchService {
 
 	@WebMethod
-	String sayHi(String input);
+	String getRoutes(String input);
 }

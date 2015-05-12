@@ -1,13 +1,13 @@
 package com.lingoware.lingow.buswatch.server.service;
 
 /**
- * @author chamerling
+ * @author Lingow
  * 
  */
-public class HelloServiceImpl implements HelloService {
+public class BuswatchServiceImplementation implements BuswatchService {
 
 	@Override
-	public String sayHi(String input) {
+	public String getRoutes(String input) {
 		System.out.println("Hello invoked : " + input);
 		return String.format("Hello '%s'", input);
 	}

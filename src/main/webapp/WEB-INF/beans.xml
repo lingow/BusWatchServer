@@ -9,10 +9,10 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 
-	<bean id="helloservice"
-		class="com.lingoware.lingow.buswatch.server.service.HelloServiceImpl" />
+	<bean id="buswatchservice"
+		class="com.lingoware.lingow.buswatch.server.service.BuswatchServiceImplementation" />
 
-	<jaxws:endpoint id="helloendpoint" implementor="#helloservice"
-		address="/HelloService" />
+	<jaxws:endpoint id="buswatchendpoint" implementor="#buswatchservice"
+		address="/BuswatchService" />
 
 </beans>
